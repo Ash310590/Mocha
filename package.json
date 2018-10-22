@@ -1,0 +1,25 @@
+{
+  "name": "rest-api-automation",
+  "version": "0.0.1",
+  "description": "Test Automation Framework for REST API testing",
+  "main": "test/tests",
+  "scripts": {
+    "tsc": "tsc --skipLibCheck",
+    "test": "./test.sh"
+  },
+  "author": "Endeavour",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "good-mocha-html-reporter": "^2.0.1",
+    "mocha": "^5.2.0",
+    "mochawesome": "^3.0.2",
+    "promise": "^8.0.1",
+    "stubby": "^4.0.0",
+    "supertest": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.0",
+    "@types/node": "^10.0.0"
+  }
+}
