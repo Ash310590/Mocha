@@ -1,0 +1,5 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "applicationRequestPath": "/employees/1",
+  "applicationDataPath": "./../data/sample-api-data"  
+}
