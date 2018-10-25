@@ -1,0 +1,29 @@
+project_name: microservices-test
+
+containers:
+  apiautomation:
+    build_directory: infrastructure
+    volumes:
+      - .:/app:cached
+
+tasks:
+  shell:
+    description: Run a shell
+    run:
+      container: apiautomation
+      command: bash
+
+  test:
+    description: Run API Automation Tests
+    prerequisites:
+      - npminstall
+    run:
+      container: apiautomation
+      command: ./testRunner.sh
+
+  npminstall:
+    description: Run API Automation Tests
+    run:
+      container: apiautomation
+      command: npm install
+
