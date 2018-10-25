@@ -19,7 +19,7 @@ tasks:
       - npminstall
     run:
       container: apiautomation
-      command: ./testRunner.sh
+      command: ./runnertest.sh
 
   npminstall:
     description: Run API Automation Tests
